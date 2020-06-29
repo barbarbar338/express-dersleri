@@ -1,0 +1,40 @@
+<div id="todo-container" class="w-50" style="margin: auto; padding: 2.5rem;">
+    <form id="add-todo-form">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-success" type="submit">Ekle</button>
+            </div>
+            <input type="text" class="form-control" placeholder="Yeni görev ekleyin" required>
+        </div>
+    </form>
+    <button class="btn btn-outline-danger btn-block" data-toggle="modal" data-target="#deleteModal">Hesabı Sil</button>
+    <br>
+    <h1 class="text-light">Yapılacaklar: </h1>
+    <hr>
+    <ul class="list-group text-dark">
+        {{#each todos}}
+        <li class="list-group-item">{{this.gorev}}</li>
+        {{/each}}
+    </ul>
+</div>
+
+<div class="modal fade" id="deleteModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Hesabınızı Silmek İstediğinize Emin Misiniz?</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Bu işlem sonucunda hesabınız ve kayıtlı yapılacak listeniz silinecektir!
+                (Bu işlem geri alınamaz!)
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Hayır</button>
+                <a href="/delete_account" class="btn btn-danger">Evet, hesabımı sil</a>
+            </div>
+        </div>
+    </div>
+</div>

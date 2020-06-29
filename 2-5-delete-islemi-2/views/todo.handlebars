@@ -1,0 +1,16 @@
+<div id="todo-container" class="w-50" style="margin: auto; padding: 2.5rem;">
+    <form>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary" type="submit">Ekle</button>
+            </div>
+            <input type="text" class="form-control" placeholder="Yeni görev ekleyin" required>
+        </div>
+    </form>
+
+    <ul class="list-group text-dark">
+        {{#each todos}}
+        <li class="list-group-item">{{this.gorev}}</li>
+        {{/each}}
+    </ul>
+</div>
