@@ -1,0 +1,11 @@
+<main class="container">
+    {{#if item}}
+    {{> itemPartial }}
+    {{/if}}
+    <p class="h5">Mağazamızdaki ürünler: </p>
+    <ul>
+        {{#each allItems}}
+        <li>{{this.name}}: {{this.price}}TL</li>
+        {{/each}}
+    </ul>
+</main>

@@ -1,0 +1,38 @@
+{
+  "name": "baris-demirci-express-dersleri",
+  "version": "2.0.0",
+  "description": "Barış DEMİRCİ YouTube kanalı Expess Dersleri serisi tüm kodlar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barbarbar338/express-dersleri.git"
+  },
+  "keywords": [
+    "express",
+    "dersleri",
+    "nodejs",
+    "node",
+    "ders",
+    "router",
+    "routing",
+    "web",
+    "site",
+    "website"
+  ],
+  "author": "Barış DEMİRCİ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barbarbar338/express-dersleri/issues"
+  },
+  "homepage": "https://github.com/barbarbar338/express-dersleri#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "handlebars-helpers": "^0.10.0",
+    "nodemon": "^2.0.4"
+  }
+}

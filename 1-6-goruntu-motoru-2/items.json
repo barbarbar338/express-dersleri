@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Kalem",
+        "price": 5,
+        "desc": "Yazı yazmanızı sağlar"
+    },
+    {
+        "name": "Silgi",
+        "price": 2.5,
+        "desc": "Yazılan yazıları silmeye yarar"
+    }
+]
